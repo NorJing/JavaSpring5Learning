@@ -1,0 +1,28 @@
+spring:
+  #profiles:
+  #  active:
+  #  - prod
+  thymeleaf:
+    cache: false 
+  datasource:
+    url: jdbc:mysql://localhost:55555/tacoappdb
+    username: tacoappuser
+    password: tacoapppass
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      # use-new-id-generator-mappings: false
+      # properties.dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  # jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+logging:
+  level:
+    root: WARN
+    com.example: WARN
+
+taco:
+  order:
+    page-size: 10
+    

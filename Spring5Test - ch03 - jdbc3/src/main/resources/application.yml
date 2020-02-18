@@ -1,0 +1,30 @@
+spring:
+  thymeleaf:
+    cache: false 
+  h2:
+    console:
+      enabled: true
+      path: "/h2-console"
+  datasource:
+    schema:
+    - classpath:/schema.sql
+    - classpath:/user_data.sql
+    - classpath:/taco_schema.sql
+    data:
+    - classpath:/data.sql
+    - classpath:/ingredient_data.sql
+    
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+
+# server:
+#  port: 0
+
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keys/mykey.jks
+    key-store-password: "123qweasd"
+    key-password: "123qweasd"

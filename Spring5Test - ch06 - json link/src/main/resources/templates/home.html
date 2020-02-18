@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Taco Cloud Home</title>
+  </head>
+  
+  <body>
+  	<!-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> -->
+  	
+  	<form method="POST" th:action="@{/logout}">
+	  <input type="submit" value="Logout"/>
+	</form>
+
+    <h1>Welcome to Taco home</h1>
+    <img th:src="@{/images/TacoCloud.png}"/>
+    <h1>Hello this is Taco!</h1>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+http request -> controller -> forward to -> view
+                    data to controler via model
+                     
+DevTools addresses this issue by automatically disabling all template caching
+
+4716592648048786

@@ -1,0 +1,1 @@
+insert into Ingredient (id, name, type) values ('NEW2','Red Corn','WRAP');

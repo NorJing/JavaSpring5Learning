@@ -1,0 +1,74 @@
+http request -> controller -> forward to -> view
+                    data to controler via model
+                     
+DevTools addresses this issue by automatically disabling all template caching
+
+1a. jdbcTemplate
+1b. jdbcSimpleInsert
+ 
+After I clicked Submit button, th:value is transferred to controller.
+ 
+################
+credit card test
+4716592648048786
+ 
+select * from Taco_Ingredients;
+
+cd C:\Users\doyan\Documents\java learning\workspace-sts-3.9.9.RELEASE\Spring5Test
+.\mvnw package && java -jar target\Spring5Test-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+./gradlew build && java -jar build/libs/gs-spring-boot-0.1.0.jar
+
+
+import.sql not work in mysql jpa
+insert into Ingredient  (id, name, type) values ('FLTO', 'Flour Tortilla from import.sql', 0);
+insert into Ingredient  (id, name, type) values ('COTO', 'Corn Tortilla from import.sql', 0);
+insert into Test_table1 (id, name, type) values ('TEST1', 'Flour Tortilla', 'WRAP');
+insert into Delivery_Box  (id, color, size) values ('Gold small box', 'Gold small box', 0);
+
+############
+httpie
+pip.exe  install --upgrade httpie
+
+C:\Users\doyan\Documents\python\python\Python36>C:\Users\doyan\Documents\python\python\Python36\Scripts\http.exe :8080/design/recent
+HTTP/1.1 200
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json;charset=UTF-8
+Date: Sun, 06 Oct 2019 20:18:31 GMT
+Expires: 0
+Pragma: no-cache
+Transfer-Encoding: chunked
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+
+[
+    {
+        "createdAt": "2019-10-06T19:38:30.609+0000",
+        "id": 2,
+        "ingredients": [
+            {
+                "id": "TMTO",
+                "name": "Diced Tomatoes",
+                "type": "VEGGIES"
+            }
+        ],
+        "name": "fffff"
+    }
+]
+
+###########################
+.\mvnw clean package -DskipTests
+java -jar target/gs-messaging-rabbitmq-0.1.0.jar
+
+
+###
+/login ? 
+/design -> /orders/current -> /
+
+CREATE KEYSPACE tacocloud WITH REPLICATION = { 
+   'class' : 'SimpleStrategy', 
+   'replication_factor' : 1 } and durable_writes=true;
+  
+
+problem:
+/design not show ingredients

@@ -1,0 +1,67 @@
+# default development profile
+spring:
+  profiles:
+    active:
+    - dev
+  thymeleaf:
+    cache: false 
+  #datasource:
+  #  url: jdbc:mysql://localhost:55555/tacoappdb?useSSL=false
+  #  username: tacoappuser
+  #  password: tacoapppass
+  #  driver-class-name: com.mysql.jdbc.Driver
+  #  platform: mysql 
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # (hibernate)
+      # use-new-id-generator-mappings: false
+      # properties.dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    # generate-ddl: true # create schema (jpa)
+  data:
+    rest:
+      base-path: /api
+  artemis:
+    mode: native
+    host: localhost
+    port: 61616
+    user: developer
+    password: developer
+jms:
+  queue:
+    destination: tacoqueue
+  #jms:
+  #  template:
+  #    default-destination: tacoqueue
+# activemq:
+#  broker-url: tcp://localhost:61616
+  
+  #h2:
+  #  console:
+  #    enabled: true
+  #    path: "/h2-console"
+
+logging:
+  level:
+    root: INFO
+    com.example: DEBUG
+
+taco:
+  order:
+    page-size: 5
+  
+# prod profile
+# ---
+# spring:
+#  profiles: prod  
+#  datasource:
+#    url: jdbc:mysql://localhost/tacocloud
+#    username: tacouser
+#    password: tacopassword
+#    driver-class-name: com.mysql.jdbc.Driver
+    
+# logging:
+#  level:
+#    root: INFO
+#    com.example: WARN
+
