@@ -1,0 +1,21 @@
+Order(email=myabdemon@gmail.com, tacos=[Taco(name=Corn Carnitas, ingredients=[COTO, CARN, LETC])])
+
+{
+		"email": "myabdemon@gmail.com",
+        "tacos": [
+            {
+                "name": "Corn Carnitas",
+                "ingredients": [
+                	{
+                		"code": "COTO",
+                	},
+                	{	
+                		"code": "CARN",
+                	},
+                	{
+                		"code": "LETC",
+                	}
+                ]
+            }
+        ]
+}

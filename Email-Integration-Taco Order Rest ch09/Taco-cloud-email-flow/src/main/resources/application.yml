@@ -1,0 +1,19 @@
+tacocloud:
+  api:
+    url: http://localhost:8080/orders/fromEmail
+  email:
+    host: imap.gmail.com
+    mailbox: Inbox
+    username: myabdemon
+    password: bdlciywekvehoiep
+    poll-rate: 1000
+    
+    #host: imap.gmail.com
+    #mailbox: INBOX
+    #username: yanhongtest
+    #password: TistAfHpiOi2!
+    #poll-rate: 10000
+
+spring:
+  main:
+    web-application-type: none
