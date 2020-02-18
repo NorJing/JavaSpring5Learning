@@ -1,0 +1,4 @@
+mvn install -DskipTests
+
+rabbitmq
+exchange -> binding routingkey -> queue
