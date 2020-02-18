@@ -1,0 +1,8 @@
+            {
+                "name": "Corn Carnitas",
+                "ingredients": [
+                	"COTO",
+                	"CARN",
+                	"LETC"
+                ]
+            }
