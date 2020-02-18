@@ -1,0 +1,26 @@
+CREATE KEYSPACE student WITH REPLICATION = { 
+   'class' : 'SimpleStrategy', 
+   'replication_factor' : 1  
+} and durable_writes=true;
+
+create table student(id int PRIMARY KEY, name text, age int);
+
+.\mvnw clean package -DskipTests
+
+insert into student (id, name, age) values (1, 'percy', 20) USING TTL 86400 AND TIMESTAMP 123456789;
+insert into student (id, name, age) values (2, 'percy2', 22) USING TTL 86400 AND TIMESTAMP 123456789;
+
+reactive cassandra work
+webflux + thymeleaf does not work
+
+Testing:
+use postman
+Get http://10.205.16.127:8080/student/all
+Post http://10.205.16.127:8080/student/save
+Header Content-Type application/json
+{
+    "id": 3011,
+    "name": "percy3011",
+    "age": 30
+}
+
