@@ -1,0 +1,26 @@
+# if port is 7000, it is ok
+# if port is 0, port 0 is registered in the registry server, not a random port gets registered
+server:
+  port: 0
+
+spring:
+  application:
+    name: Eureka-client-ingredient-service
+  main:
+    allow-bean-definition-overriding: true
+
+#
+# This sets the location of the Eureka server. The config shown here differs
+# slightly from the config in chapter 13 in that it references a localhost
+# Eureka instead of a Eureka at eureka1.tacocloud.com. That's because the
+# domain in the book is made up for the sake of the example but doesn't really
+# work. 
+#
+# It's also worth noting that since Eureka clients default to assume that there
+# is a Eureka at http://localhost:8761/eureka/, setting this property explicitly
+# to reference a local instance isn't strictly required.
+#    
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/

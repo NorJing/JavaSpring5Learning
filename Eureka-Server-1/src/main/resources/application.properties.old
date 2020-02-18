@@ -1,0 +1,14 @@
+server.port=8761
+
+eureka.instance.hostname=eureka1.tacocloud.com
+#eureka.client.fetch-registry=true
+#eureka.client.register-with-eureka=true
+#eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka
+eureka.client.service-url.defaultZone=http://${other.eureka.host}:${other.eureka.port}/eureka
+#eureka.server.enable-self-preservation=true 
+
+spring.profiles=eureka-1
+spring.application.name=eureka-1
+
+other.eureka.host=localhost
+other.eureka.port=8762
